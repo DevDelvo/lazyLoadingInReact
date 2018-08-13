@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 import './App.css';
-import Home from './Home/Home.js';
-import About from './About/About.js';
-import Settings from './Settings/Settings.js';
+import Home from './Home/Home';
+import About from './About';
+import Settings from './Settings';
 
 class App extends Component {
   render() {

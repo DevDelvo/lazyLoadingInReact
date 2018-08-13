@@ -14,7 +14,7 @@ class Settings extends Component {
         return (
             <div>
                 <div>
-                    <button onClick={this.editProfile}>Edit Profile</Button>
+                    <button onClick={this.editProfile}>Edit Profile</button>
                     {this.state.editable && <LazyEditProfile />}
                 </div>
             </div>
