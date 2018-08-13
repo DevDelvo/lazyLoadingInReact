@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 import './App.css';
 import Home from './Home/Home';
-import About from './About';
-import Settings from './Settings';
+import LazyAbout from './About';
+import LazySettings from './Settings';
 
 class App extends Component {
   render() {
@@ -28,8 +28,8 @@ class App extends Component {
             </li>
           </ul>
           <Route exact path="/" render={Home} />
-          <Route path="/about" Component={About} />
-          <Route path="/settings" Component={Settings} />
+          <Route path="/about" component={LazyAbout} />
+          <Route path="/settings" component={LazySettings} />
         </div>
       </BrowserRouter>
     );

@@ -13,10 +13,10 @@ class Settings extends Component {
     render() {
         return (
             <div>
-                <div>
-                    <button onClick={this.editProfile}>Edit Profile</button>
-                    {this.state.editable && <LazyEditProfile />}
-                </div>
+                <div>Settings Page loaded</div>
+                <button onClick={this.editProfile}>Edit Profile</button>
+                {this.state.editable && <LazyEditProfile />}
+                
             </div>
 
         )
